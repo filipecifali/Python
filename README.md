@@ -22,11 +22,11 @@ while True:
                 try:
                     if '' in numbs:                                                         
                         numbs = numbs.split()
-                        if numbs[0].isalnum() and numbs[1].isalnum():
-                            print('Two numbers are necessart foloowi by the space')
+                        if numbs[0].isalnum() or numbs[1].isalnum():
+                            print('<<ERROR>>  Your values are not numbers.')
                             break
-                        elif numbs[0].isalpha() and numbs[1].isalpha():
-                            print('LETTERare necessart foloowi by the space')
+                        elif numbs[0].isalpha() or numbs[1].isalpha():
+                            print('<<ERROR>>  Your values are not numbers.')
                             break
                         else: 
                             numbs[0] = float(numbs[0])
@@ -36,7 +36,7 @@ while True:
                             pass
                     else: break
                 except:
-                    print('need space')
+                    pass
             else: break                                                                   
         else:pass
 else: 
