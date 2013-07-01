@@ -1,3 +1,11 @@
+print('What do you need calculate?')
+print('-------------------------')
+print()
+hc={1:'HYPOTENUSE',2:'CATHETUS'}
+for b in sorted(hc):
+    print (b,'=>',hc[b])
+    print()
+
 while True: 
     option  = input ('Insert your option:  ')
     
